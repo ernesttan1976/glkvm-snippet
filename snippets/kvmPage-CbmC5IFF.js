@@ -2643,12 +2643,13 @@ const ra = {
                           placeholder: e.$t("main.pasteTextTip"),
                           rows: 8,
                           value: s.text,
+                          disabled: s.loading,
                           "onUpdate:value":
                             t[2] || (t[2] = (e) => (s.text = e)),
                         },
                         null,
                         8,
-                        ["placeholder", "value"],
+                        ["placeholder", "value", "disabled"],
                       ),
                     ]),
                     o(
